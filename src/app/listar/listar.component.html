@@ -1,0 +1,27 @@
+<div class="container">
+  <label>Elija el Profesor</label>
+  <br>
+  <select [(ngModel)]="proSeleccionado" (ngModelChange)="capturar()">
+    <option *ngFor="let profesor of profesores" [ngValue]="profesor">
+      {{profesor.nombreProfesor}}
+    </option>
+  </select>
+  <div *ngIf="profesores">
+  <div>
+  <table class="table table-responsive table-bordered" id="excel-table">
+    <thead>
+      <tr>
+        <td>Asignatura</td>
+        <td>Estudiante</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of incripciones">
+        <td>{{item.nombreAsignatura}}</td>
+        <td>{{item.nombreEstudiante}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>

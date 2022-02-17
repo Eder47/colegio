@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "colegio"
+    }
+  },
+  "defaultProject": "colegio",
+  "cli": {
+    "analytics": "787c7627-875a-49ca-9ccd-cb1bd7059cd4"
+  }
 }
